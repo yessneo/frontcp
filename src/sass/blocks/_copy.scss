@@ -1,0 +1,24 @@
+
+.copied {
+    display: grid;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #4ACD87;
+    height: 0px;
+    text-align: center;
+    // display: none;
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 10000;
+    p {
+        color: white;
+        font-family: 'inconsolata', monospace;
+        font-size: 1.5rem;
+        transition: 0.3s;
+        align-self: center;
+
+    }
+}

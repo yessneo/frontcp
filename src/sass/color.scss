@@ -1,0 +1,59 @@
+html * ,
+::before ,
+::after {
+    box-sizing: border-box;
+}
+
+#gradient {
+    color: rgba(255, 255, 255, 0.801);
+	background: linear-gradient(to right, #DE314F , #01427B);
+}
+
+.container {
+    width: 100%;
+    padding: 21px;
+}
+
+.color {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 144px 144px;
+    grid-gap: 40px;
+    margin-top: 70px;
+    .color__picker {
+        width: 144px;
+        height: 50px;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'inconsolata', monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 35px 0 0 0;
+}
+
+.result {
+    display: grid;
+    justify-content: center;
+}
+
+#myInput {
+    font-family: 'inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    padding: 24px;
+    width: 330px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 24px;
+}
+
+
+

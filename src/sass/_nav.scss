@@ -1,0 +1,107 @@
+header {
+    // background: #242836;
+    width: 100%;
+    padding: 21px;
+    // display: grid;
+    // grid-template-columns: auto auto;
+    p {
+        margin: 0;
+    }
+    .logo {
+        font-family: 'Jura', sans-serif;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+        .logo__title {
+            font-size: 4.3rem;
+            color: #fff;
+            margin-left: 10px;
+        }
+        .logo__tagline {
+            display: none;
+            grid-column: span 2;
+            font-size: 2.6rem;
+            color: #DE314F;
+            margin-top: 6px;
+            @include sm {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.menu__button {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    top: 21px;
+    right: 21px;
+    // z-index: 1;
+    // margin-top: 21px;
+    // margin-right: 21px;
+    cursor: pointer;
+    .menu__icon {
+        stroke: white;
+        transition: .3s;
+        &:hover{
+            stroke: #DE314F;
+        }
+        
+    }
+}
+
+.menu__list {
+    // display: none;
+    margin: 0;
+    padding-left: 0;
+    height: 0%;
+    width: 100%;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    position: fixed;
+    display: block;
+    text-align: center;
+    .menu__item {
+        opacity: 0;
+        padding-top: 69px;
+    }
+    .menu__link {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
+        &:hover {
+            color: #DE314F;
+            cursor: pointer;
+        }
+    }
+}
+.menu__list--open {
+    height: 100%;
+    // visibility: visible;
+    -webkit-animation: fadeIn .4s;
+    animation: fadeIn .4s;
+    padding-top: 77px;
+    .menu__item {
+        opacity: 1;
+    }
+}
+.menu__icon-menu,
+.menu__button--open .menu__icon-cross {
+    display: block;
+}
+.menu__icon-cross,
+.menu__button--open .menu__icon-menu {
+    display: none;
+}
+
+

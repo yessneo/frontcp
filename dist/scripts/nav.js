@@ -34,7 +34,7 @@ clipboard.on('error', function(e) {
 btn.addEventListener('click', function showCopied() {
 
 	// copied.style.display = "block";
-	copied.style.height = "70px";
+	copied.style.height = "60px";
 
 	setTimeout(clearCopied, 2000);
 })
@@ -42,18 +42,3 @@ function clearCopied() {
 	// copied.style.display = "none";
 	copied.style.height = "0";
 }
-
-
-
-
-
-// NAVIGATION
-
-// Menu
-
-
-
-
-
-
-

@@ -28,6 +28,11 @@ $sm: 480px;  // telephone
     @content;
   }
 }
+// @mixin sm {
+//   @media (width <= 320px) {
+//     @content;
+//   }
+// }
 
 // ---------------------------------
 // Path
@@ -47,6 +52,7 @@ html * ,
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'inconsolata', monospace;
     // @include sm-side {
     //   font-size: 74%;
     // }
@@ -59,7 +65,9 @@ html {
 }
 body {
   font-size: 1.6rem;
+  background: #242836;
 }
+
 
 
 // how to media

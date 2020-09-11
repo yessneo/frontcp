@@ -1,0 +1,195 @@
+$boxWSize:200px;
+$boxHSize:200px;
+$imgWidth:200px;
+$imgHeight:200px;
+
+
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    .box1{
+        overflow: hidden;
+        margin: 10px;
+        width: $boxWSize;
+        height: $boxHSize;
+        .img1{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            &:hover{
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    .box2{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        .img2{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            &:hover{
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    .box3{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        transition: all .3s ease;
+        .img3{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+        }
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 5px 5px 5px rgba(196, 196, 196, 0.877);
+        }
+    }
+
+    .box4{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        filter: blur(3px);
+        transition: all .3s ease;
+        .img4{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+        }
+        &:hover{
+            filter: blur(0);
+        }
+    }
+
+    .box5{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        position: relative;
+        .img5{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+        }
+        .mask{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: rgba(0, 0, 0, 0.596);
+            transition:	all 0.6s ease;
+            .caption{
+                font-size: 130%;
+                color: #fff;
+                text-align: center;
+                line-height: $imgHeight;
+            }
+        }
+        &:hover .mask{
+            top: 0;
+        }
+    }
+    .box6{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        .img6{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+            transition:	all 0.3s ease;
+            &:hover{
+                transform: rotate(-25deg) scale(1.5);
+
+            }
+        }
+
+    }
+
+    .box7{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        position: relative;
+        .img7{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+            transition:	all 0.3s ease;
+            &_after{
+                object-fit: cover;
+                width: $imgWidth;
+                height: $imgHeight;
+                transition:	all 0.3s ease;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        &:hover{
+            .img7{
+                &_after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .box8{
+        margin: 10px;
+        overflow: hidden;
+        width: $boxWSize;
+        height: $boxHSize;
+        position: relative;
+        .img8{
+            object-fit: cover;
+            width: $imgWidth;
+            height: $imgHeight;
+        }
+        .mask{
+            width: $imgWidth;
+            height: $imgHeight;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.596);
+            transition:	all 0.6s ease;
+            .caption{
+                font-size: 130%;
+                color: #fff;
+                text-align: center;
+                line-height: $imgHeight;
+            }
+        }
+        &:hover .mask{
+            top: 100%;
+        }
+    }
+}

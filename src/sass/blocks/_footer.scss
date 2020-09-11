@@ -1,0 +1,50 @@
+footer {
+    background: #242836;
+    width: 100%;
+    padding: 21px;
+    display: grid;
+    p {
+        margin: 0;
+    }
+    .logo {
+        font-family: 'Jura', sans-serif;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+        .logo__title {
+            font-size: 4.3rem;
+            color: #fff;
+            margin-left: 10px;
+        }
+        .logo__tagline {
+            grid-column: span 2;
+            font-size: 2.6rem;
+            color: #DE314F;
+            margin-top: 6px;
+        }
+    }
+    .footer__txt {
+        margin-top: 20px;
+        font-family: 'inconsolata', monospace;
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        line-height: 3rem;
+    }
+    .footer__highlight--white {
+        font-weight: 600;
+    }
+    .footer__highlight--red {
+        color: #DE314F;
+        font-weight: 600;
+    }
+    small {
+        justify-self: center;
+        color: #fff;
+        font-family: 'inconsolata', monospace;
+        font-size: 1.5rem;
+        margin-top: 83px;
+    }
+
+}

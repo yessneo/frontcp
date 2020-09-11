@@ -42,18 +42,3 @@ function clearCopied() {
 	// copied.style.display = "none";
 	copied.style.height = "0";
 }
-
-
-
-
-
-// NAVIGATION
-
-// Menu
-
-
-
-
-
-
-
